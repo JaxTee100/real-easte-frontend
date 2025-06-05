@@ -1,6 +1,8 @@
-import Image from "next/image";
+'use client'
 import { LogOut } from "lucide-react";
 import { useAuthStore } from "@/store/useAuthStore";
+import { useRouter } from "next/navigation";
+const router = useRouter();
 
 export default function Home() {
 
