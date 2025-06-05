@@ -2,10 +2,10 @@
 import { LogOut } from "lucide-react";
 import { useAuthStore } from "@/store/useAuthStore";
 import { useRouter } from "next/navigation";
-const router = useRouter();
+
 
 export default function Home() {
-
+const router = useRouter();
   const { logout } = useAuthStore();
   async function handleLogout() {
     await logout();
